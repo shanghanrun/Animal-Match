@@ -44,7 +44,7 @@ public class Card : MonoBehaviour
     }
     void OnMouseDown(){
         // Debug.Log("mouse down");
-        if(!isFlipping && !isMatched){  // 뒤집혀지고 있는 상태가 아닐 경우에만
+        if(!isFlipping && !isMatched &&!isFlipped){  
             // FlipCard();
             GameManager.instance.CardClicked(this); //this 전달 
         }
